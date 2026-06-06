@@ -15,7 +15,7 @@ jobs:
       run: sudo apt install -y g++-mingw-w64-x86-64
     - name: Check if input.jar exists
       id: check_input_jar
-      uses: andstor/file-existence-action@v2
+      uses: andstor/file-existence-action@v3
       with:
         files: input.jar
     - name: Copy test if input.jar does not exist
